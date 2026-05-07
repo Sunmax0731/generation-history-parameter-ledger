@@ -1,0 +1,18 @@
+{
+  "name": "generation-history-parameter-ledger",
+  "version": "0.1.0-alpha.1",
+  "private": false,
+  "type": "module",
+  "description": "生成履歴・パラメータ固定台帳 closed alpha",
+  "scripts": {
+    "test": "node tests/product.test.mjs",
+    "validate": "node src/cli/index.js --input samples/representative-suite.json --output dist/generation-history-parameter-ledger-representative-report.json",
+    "build": "node scripts/build-docs-zip.mjs"
+  },
+  "keywords": [
+    "AssetPipeline",
+    "closed-alpha",
+    "qcds"
+  ],
+  "license": "MIT"
+}
