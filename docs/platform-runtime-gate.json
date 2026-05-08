@@ -1,0 +1,11 @@
+{
+  "product": "generation-history-parameter-ledger",
+  "title": "生成履歴・パラメータ固定台帳",
+  "domain": "AssetPipeline",
+  "ideaNo": 5,
+  "platformType": "cli-release-tool",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
