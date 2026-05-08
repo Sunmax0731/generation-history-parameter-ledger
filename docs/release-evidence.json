@@ -1,76 +1,60 @@
 {
   "product": "generation-history-parameter-ledger",
+  "repository": "Sunmax0731/generation-history-parameter-ledger",
+  "githubUrl": "https://github.com/Sunmax0731/generation-history-parameter-ledger",
+  "releaseUrl": "https://github.com/Sunmax0731/generation-history-parameter-ledger/releases/tag/v0.1.0-alpha.1",
   "tag": "v0.1.0-alpha.1",
-  "status": "released",
-  "updatedAt": "2026-05-07T23:26:29.249Z",
-  "manualTestStatus": "手動テスト未実施",
-  "automatedVerification": {
-    "npmTest": "passed",
-    "npmRunValidate": "passed",
-    "npmRunBuild": "passed",
-    "firstPassOutput": {
-      "npmTest": "> generation-history-parameter-ledger@0.1.0-alpha.1 test\n> node tests/product.test.mjs\n\n{\n  \"product\": \"generation-history-parameter-ledger\",\n  \"scenarios\": 4,\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  }\n}",
-      "npmRunValidate": "> generation-history-parameter-ledger@0.1.0-alpha.1 validate\n> node src/cli/index.js --input samples/representative-suite.json --output dist/generation-history-parameter-ledger-representative-report.json\n\n{\n  \"outputPath\": \"dist/generation-history-parameter-ledger-representative-report.json\",\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  },\n  \"scenarios\": 4\n}",
-      "npmRunBuild": "> generation-history-parameter-ledger@0.1.0-alpha.1 build\n> node scripts/build-docs-zip.mjs\n\n{\n  \"zipPath\": \"D:\\\\AI\\\\AssetPipeline\\\\generation-history-parameter-ledger\\\\dist\\\\generation-history-parameter-ledger-docs.zip\"\n}"
-    }
+  "prerelease": true,
+  "latest": false,
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
   },
-  "github": {
-    "repo": "Sunmax0731/generation-history-parameter-ledger",
-    "releaseUrl": "https://github.com/Sunmax0731/generation-history-parameter-ledger/releases/tag/v0.1.0-alpha.1",
-    "tagName": "v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false,
-    "latestEndpoint": {
-      "latestEndpointStatus": "not-found-or-not-latest",
-      "latestTag": null,
-      "stderr": "gh: Not Found (HTTP 404)\n"
-    },
-    "assetCount": 3,
-    "assets": [
+  "assetCount": 3,
+  "assets": {
+    "required": [
+      "dist/generation-history-parameter-ledger-docs.zip",
+      "docs/manual-test.md",
+      "docs/strict-manual-test-addendum.md"
+    ],
+    "actualNames": [
       "generation-history-parameter-ledger-docs.zip",
       "manual-test.md",
       "strict-manual-test-addendum.md"
     ],
-    "url": "https://github.com/Sunmax0731/generation-history-parameter-ledger"
+    "actualCount": 3,
+    "allRequiredPresent": true
   },
-  "git": {
-    "mainOriginCleanBeforeEvidenceCommit": {
-      "mainOriginClean": true,
-      "aheadBehind": {
-        "ahead": 0,
-        "behind": 0
-      },
-      "status": "",
-      "codexBranchesRemaining": [
-        "codex/closed-alpha-release"
-      ]
-    }
-  },
-  "assets": [
-    "dist/generation-history-parameter-ledger-docs.zip",
-    "docs/manual-test.md",
-    "docs/strict-manual-test-addendum.md"
-  ],
-  "qcds": {
+  "qcdsEvaluation": {
     "Quality": "S-",
     "Cost": "S-",
     "Delivery": "S-",
     "Satisfaction": "S-"
   },
-  "repository": "Sunmax0731/generation-history-parameter-ledger",
-  "githubUrl": "https://github.com/Sunmax0731/generation-history-parameter-ledger",
-  "releaseUrl": "https://github.com/Sunmax0731/generation-history-parameter-ledger/releases/tag/v0.1.0-alpha.1",
-  "prerelease": true,
-  "latest": false,
-  "assetCount": 3,
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "cli-release-tool",
+  "platformRuntimeGate": {
+    "product": "generation-history-parameter-ledger",
+    "platformType": "cli-release-tool",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "packageTest": true
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
   "manualTest": "not-run-by-codex",
-  "qcdsEvaluation": {
-    "Quality": "S-",
-    "Cost": "S-",
-    "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
