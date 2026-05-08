@@ -11,7 +11,7 @@
     "latestTag": null,
     "latestIsThisPrerelease": false
   },
-  "assetCount": 1,
+  "assetCount": 3,
   "assets": {
     "required": [
       "dist/generation-history-parameter-ledger-docs.zip",
@@ -19,10 +19,12 @@
       "docs/strict-manual-test-addendum.md"
     ],
     "actualNames": [
-      "manual-test.md"
+      "generation-history-parameter-ledger-docs.zip",
+      "manual-test.md",
+      "strict-manual-test-addendum.md"
     ],
-    "actualCount": 1,
-    "allRequiredPresent": false
+    "actualCount": 3,
+    "allRequiredPresent": true
   },
   "qcdsEvaluation": {
     "Quality": "S-",
